@@ -69,6 +69,8 @@ def create_tables():
     conn.close()
 
 
+create_tables():
+
 @app.route("/")
 def home():
     return "Welcome to Brewé Coffee Backend!"

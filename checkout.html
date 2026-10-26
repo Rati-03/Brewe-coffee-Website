@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewé | Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Brewé.</a>
+        <h1>Checkout</h1>
+        <p>One last step before your coffee break ☕</p>
+    </header>
+
+    <main class="checkout-container">
+        <section class="customer-details">
+            <h2>Your Details</h2>
+
+            <form id="checkout-form">
+                <label for="customer-name">Full Name</label>
+                <input
+                    type="text"
+                    id="customer-name"
+                    name="customer-name"
+                    required
+                    maxlength="100"
+                    autocomplete="name"
+                >
+
+                <label for="customer-phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="customer-phone"
+                    name="customer-phone"
+                    required
+                    maxlength="10"
+                    pattern="[6-9][0-9]{9}"
+                    inputmode="numeric"
+                    autocomplete="tel"
+                    placeholder="10-digit mobile number"
+                >
+
+                <button type="submit" id="place-order">
+                    Place Order
+                </button>
+
+                <p id="order-message" role="status"></p>
+            </form>
+        </section>
+
+        <section class="order-summary">
+            <h2>Your Order</h2>
+            <ul id="checkout-items"></ul>
+
+            <h3>Total: ₹<span id="checkout-total">0</span></h3>
+
+            <a href="menu2.html">← Back to Menu</a>
+        </section>
+    </main>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

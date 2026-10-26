@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #FFFDD0;
+    color: #3e2723;
+}
+
+header {
+    background: #fde8ca;
+    padding: 25px;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+#orders-container {
+    display: grid;
+    gap: 20px;
+}
+
+.order-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+.order-card h3 {
+    margin-top: 0;
+}
+
+.order-card ul {
+    padding-left: 20px;
+}
+
+.order-total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #6F4E37;
+}
+
+#status {
+    margin-bottom: 20px;
+}

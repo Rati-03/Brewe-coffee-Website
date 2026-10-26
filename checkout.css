@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFDD0;
+    color: #3e3028;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fde8ca;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.logo {
+    display: inline-block;
+    color: #6F4E37;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    color: #6F4E37;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #6F4E37;
+}
+
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.customer-details,
+.order-summary {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #6F4E37;
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #c8b6a6;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #6F4E37;
+    border-color: #6F4E37;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #543824;
+}
+
+#checkout-items {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#checkout-items li {
+    margin-bottom: 12px;
+}
+
+.order-summary h3 {
+    color: #6F4E37;
+    margin-bottom: 20px;
+}
+
+.order-summary a {
+    color: #6F4E37;
+    text-decoration: none;
+}
+
+.order-summary a:hover {
+    text-decoration: underline;
+}
+
+#order-message {
+    margin-top: 15px;
+}
+
+@media (max-width: 650px) {
+    .checkout-container {
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+        gap: 20px;
+    }
+}

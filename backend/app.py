@@ -69,7 +69,7 @@ def create_tables():
     conn.close()
 
 
-create_tables():
+create_tables()
 
 @app.route("/")
 def home():

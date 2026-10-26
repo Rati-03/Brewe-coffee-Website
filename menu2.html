@@ -35,7 +35,7 @@
                 <h2>Cafe Latte</h2>
                 <p>Rich and creamy coffee</p>
                 <h3>₹145</h3>
-                <button>ADD TO CART</button>
+                <button class="add-to-cart">ADD TO CART</button>
             </div>
 
 
@@ -53,7 +53,7 @@
                         <h2>Cappuccino</h2>
                         <p>Rich and frothy coffee</p>
                         <h3>₹185</h3>
-                        <button>ADD TO CART</button>
+                        <button class="add-to-cart">ADD TO CART</button>
                     </div>
 
 
@@ -69,7 +69,8 @@
                         <h2>Espresspo</h2>
                         <p>Rich and frothy coffee</p>
                         <h3>₹210</h3>
-                        <button>ADD TO CART</button>
+                        <button class="add-to-cart">ADD TO CART</button>
+
                     </div>
         </div>
         <div class="Expresso  items">
@@ -82,7 +83,8 @@
                         <h2>Mocha</h2>
                         <p>Rich and frothy coffee</p>
                         <h3>₹240</h3>
-                        <button>ADD TO CART</button>
+                        <button class="add-to-cart">ADD TO CART</button>
+
                     </div>
         </div>
         <div class="coldcofee  items">
@@ -95,7 +97,8 @@
                         <h2>Cold Cofee</h2>
                         <p>Taste in every sip </p>
                         <h3>₹230</h3>
-                        <button>ADD TO CART</button>
+                        <button class="add-to-cart">ADD TO CART</button>
+
                     </div>
         </div>
         <div class="Americano  items">
@@ -108,11 +111,23 @@
                         <h2>Americano</h2>
                         <p>American Delight</p>
                         <h3>₹260</h3>
-                        <button>ADD TO CART</button>
+                        <button class="add-to-cart">ADD TO CART</button>
                     </div>
         </div>
     </div>
 
-    
+    <section class="cart">
+        <h2>Your Cart</h2>
+
+        <ul id="cart-items"></ul>
+
+        <h3>Total: ₹<span id="cart-total">0</span></h3>
+
+        <button id="place-order">Place Order</button>
+
+        <p id="order-message"></p>
+    </section>
+
+<script src ="./cart.js"></script>
 </body>
 </html>
